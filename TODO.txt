@@ -1,8 +1,7 @@
 md & lg view ✅
 moving background ✅
+clean up the code ✅
 
 link hrefs
 make vcard info file
-clean up the code
 color bg variants for gender
-add gsap

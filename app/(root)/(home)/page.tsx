@@ -17,11 +17,11 @@ const page = () => {
         {/* TOP INFO W LOGO */}
         <section className="flex flex-col justify-between text-center text-lg md:text-xl">
           <Image
-            src="/images/celeste logo.png"
+            src="/images/logo2.png"
             alt=""
             width={500}
             height={500}
-            className="mb-5 w-32 place-self-center md:mb-10 md:w-44"
+            className="mb-5 w-28 place-self-center md:mb-10 md:w-44"
           />
           <h1 className="text-3xl font-semibold md:text-4xl">
             Dr. Varun Agarwal
@@ -74,7 +74,7 @@ const page = () => {
               <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
                 <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
                   <RiContactsLine className="text-2xl md:text-4xl" />
-                  Save Contact Information
+                  Save Contact Info
                 </span>
               </button>
             </Link>
