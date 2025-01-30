@@ -1,99 +1,39 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BiSolidPhoneCall } from "react-icons/bi";
+import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
-import { IoMdContact } from "react-icons/io";
-// import dynamic from "next/dynamic";
-// import HomeEmblaCarousel from "../../../components/ui/HomeEmbla";
-// // import { Metadata } from "next";
-
-// const DynamicAbout = dynamic(() => import("@/components/About"));
-// const DynamicWhy = dynamic(() => import("@/components/ui/WhyChooseUsCards"));
-// const DynamicGoogleReviews = dynamic(
-//   () => import("@/components/ui/GoogleReviewsCarousel"),
-// );
-// const DynamicContact = dynamic(() => import("@/components/HomepageContact"), {
-//   ssr: false,
-// });
+import { RiContactsLine } from "react-icons/ri";
+import { IoMdMail } from "react-icons/io";
+import { MdFacebook } from "react-icons/md";
+import { AiFillInstagram } from "react-icons/ai";
+import { HiMiniGlobeAsiaAustralia } from "react-icons/hi2";
+import GridAnimation from "@/components/GridAnimation";
 
 const page = () => {
   return (
     <>
-      {/* <div> */}
-      <main className="relative mt-24 flex flex-col items-center justify-center overflow-clip">
-        {/* HERO */}
-        {/* <section className="relative">
-          <HomeEmblaCarousel />
-          <div className="hero-overlay text-white lg:h-[60vh] absolute inset-0 flex flex-col items-start justify-end p-3 pb-6 md:p-4 lg:ml-10 lg:justify-center">
-            <p className="mb-1 text-lg font-semibold md:text-2xl lg:text-3xl">
-              Your Beautiful Self
-            </p>
-            <p className="md:text-xl lg:text-2xl">
-              Visit Dr. Varun Agarwal today to start your healthy skin journey!
-            </p>
-          </div>
-        </section> */}
-
-        {/* STATS */}
-        {/* <section>
-          <div className="mx-auto my-5 grid max-w-[90%] md:max-w-[85%] grid-cols-3 gap-x-3 rounded-3xl border-4 px-3 py-5 md:my-16 md:gap-x-16">
-            <div className="flex flex-col items-center text-center">
-              <p className="text-xl font-semibold md:text-3xl">20+</p>
-              <h3 className="md:text-2xl">Years of Experience</h3>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <p className="text-xl font-semibold md:text-3xl">1,200+</p>
-              <h3 className="md:text-2xl">Procedures Done</h3>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <p className="text-xl font-semibold md:text-3xl">3,000+</p>
-              <h3 className="md:text-2xl">Happy Patients</h3>
-            </div>
-          </div>
-        </section> */}
-
-        {/* ABOUT THE DOCTOR */}
-        {/* <section className="mx-auto max-w-[90%] md:mb-12 md:max-w-[85%] rounded-3xl lg:w-full
-         bg-gray-200">
-          <DynamicAbout />
-        </section> */}
-
-        {/* WHY CHOOSE US */}
-        {/* <section className="mx-auto mb-12 mt-7 block max-w-[90%] rounded-3xl bg-red-500 py-6 pl-4 md:hidden">
-          <h1 className="text-2xl font-semibold md:text-3xl">Why Choose Us</h1>
-          <DynamicWhy />
-        </section> */}
-
-        {/* GOOGLE TESTIMONIALS */}
-        {/* <section>
-          <DynamicGoogleReviews />
-        </section> */}
-
-        {/* CONTACT US */}
-        {/* <section className="w-full max-w-[90%] md:max-w-[85%] lg:mt-10">
-          <DynamicContact />
-        </section> */}
-      </main>
-      {/* </div> */}
-
-      <main className="relative mx-auto -mt-12 flex max-w-[90%] flex-col items-center justify-center overflow-clip">
+      <main className="relative mx-auto mt-8 flex max-w-[90%] flex-col items-center justify-center overflow-clip">
+        {/* <GridAnimation /> */}
         {/* TOP INFO W LOGO */}
-        <section className="flex flex-col justify-between text-center text-lg">
+        <section className="flex flex-col justify-between text-center text-lg md:text-xl">
           <Image
             src="/images/celeste logo.png"
             alt=""
             width={500}
             height={500}
-            className="mb-8 w-32 place-self-center"
+            className="mb-5 w-32 place-self-center md:mb-10 md:w-44"
           />
-          <h1 className="mb-4 text-3xl font-semibold">Dr. Varun Agarwal</h1>
+          <h1 className="mb-4 text-3xl font-semibold md:text-4xl">
+            Dr. Varun Agarwal
+          </h1>
           <p>Hey! 👋</p>
           <p>
             This is my digital business card. Here&apos;s everything to know
             about me.
           </p>
-          <div className="my-4 border-2 border-b-black-100" />
+          <div className="my-4 border-2 border-b-black-100 md:my-8" />
         </section>
 
         {/* HERO + 3 BUTTONS */}
@@ -103,46 +43,100 @@ const page = () => {
             alt=""
             width={500}
             height={500}
-            className="my-2 w-max place-self-center rounded-2xl"
+            className="mx-auto my-2 w-max place-self-center rounded-2xl"
           />
-          <div className="mx-auto w-max">
+          <div className="mx-auto">
             <Link
-              className="my-4 flex items-center justify-center md:mt-12 lg:ml-12 lg:justify-normal"
+              className="my-4 flex items-center justify-center md:mt-5"
               href="tel:01274222811"
             >
-              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:p-3 md:px-6">
-                <span className="ml-4 flex items-center justify-start gap-x-4">
-                  <BiSolidPhoneCall className="text-2xl" />
+              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
+                <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
+                  <BiPhoneCall className="text-2xl md:text-4xl" />
                   Call Now
                 </span>
               </button>
             </Link>
             <Link
-              className="my-4 flex items-center justify-center md:mt-12 lg:ml-12 lg:justify-normal"
+              className="my-4 flex items-center justify-center md:mt-5"
               href="tel:01274222811"
             >
-              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:p-3 md:px-6">
-                <span className="ml-4 flex items-center justify-start gap-x-4">
-                  <FaWhatsapp className="text-2xl" />
+              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
+                <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
+                  <FaWhatsapp className="text-2xl md:text-4xl" />
                   Text on WhatsApp
                 </span>
               </button>
             </Link>
             <Link
-              className="my-4 flex items-center justify-center md:mt-12 lg:ml-12 lg:justify-normal"
+              className="my-4 flex items-center justify-center md:mt-5"
               href="tel:01274222811"
             >
-              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:p-3 md:px-6">
-                <span className="ml-4 flex items-center justify-start gap-x-4">
-                  <IoMdContact className="text-2xl" />
+              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
+                <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
+                  <RiContactsLine className="text-2xl md:text-4xl" />
                   Save Contact Information
                 </span>
               </button>
             </Link>
           </div>
-          <div className="my-4 border-2 border-b-black-100" />
+          <div className="my-4 border-2 border-b-black-100 md:my-8" />
+        </section>
+
+        {/* MAP */}
+        <section className="flex flex-col justify-between text-center text-lg">
+          <h1 className="my-2 mb-4 text-3xl font-semibold md:text-5xl">
+            Visit Us
+          </h1>
+          <div className="mx-auto mb-2 aspect-square w-[90vw] md:w-[80vw] lg:w-[25vw]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22582.143987612282!2d-122.1565248820646!3d37.42647615735572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbae5f33774b5%3A0x6dd7ef2d054587e3!2sTerun%20Pizza!5e0!3m2!1sen!2sin!4v1735704949104!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              className="rounded-2xl border-0"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="my-4 border-2 border-b-black-100 md:my-8" />
+        </section>
+
+        {/* SOCIAL ICONS */}
+        <section className="mb-16 flex flex-row items-center justify-center space-x-4 text-3xl md:mb-24 md:space-x-6 md:text-4xl">
+          <Link href="tel:01274222811">
+            <IoMdMail />
+          </Link>
+          <Link href="tel:01274222811">
+            <HiMiniGlobeAsiaAustralia />
+          </Link>
+          <Link href="tel:01274222811">
+            <MdFacebook />
+          </Link>
+          <Link href="tel:01274222811">
+            <AiFillInstagram />
+          </Link>
+          {/* <Link href="tel:01274222811">
+            <IoLogoWhatsapp />
+          </Link>
+          <Link href="tel:01274222811">
+            <IoMdContact />
+          </Link> */}
         </section>
       </main>
+
+      <footer>
+        <div className="bg-black p-3 text-center font-light text-white md:p-6 md:text-lg lg:text-xl">
+          {" "}
+          Designed by{" "}
+          <Link
+            href="https://www.celesteconsulting.in/"
+            className="!cursor-pointer hover:text-indigo-300"
+            target="_blank"
+          >
+            {" "}
+            Céleste Consulting ✨
+          </Link>
+        </div>
+      </footer>
     </>
   );
 };
