@@ -9,13 +9,11 @@ import { IoMdMail } from "react-icons/io";
 import { MdFacebook } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 import { HiMiniGlobeAsiaAustralia } from "react-icons/hi2";
-import GridAnimation from "@/components/GridAnimation";
 
 const page = () => {
   return (
     <>
       <main className="relative mx-auto mt-8 flex max-w-[90%] flex-col items-center justify-center overflow-clip">
-        {/* <GridAnimation /> */}
         {/* TOP INFO W LOGO */}
         <section className="flex flex-col justify-between text-center text-lg md:text-xl">
           <Image
@@ -25,9 +23,10 @@ const page = () => {
             height={500}
             className="mb-5 w-32 place-self-center md:mb-10 md:w-44"
           />
-          <h1 className="mb-4 text-3xl font-semibold md:text-4xl">
+          <h1 className="text-3xl font-semibold md:text-4xl">
             Dr. Varun Agarwal
           </h1>
+          <h1 className="mb-10 text-2xl font-light md:text-3xl">MD, DDV</h1>
           <p>Hey! 👋</p>
           <p>
             This is my digital business card. Here&apos;s everything to know
@@ -83,7 +82,7 @@ const page = () => {
           <div className="my-4 border-2 border-b-black-100 md:my-8" />
         </section>
 
-        {/* MAP */}
+        {/* VISIT */}
         <section className="flex flex-col justify-between text-center text-lg">
           <h1 className="my-2 mb-4 text-3xl font-semibold md:text-5xl">
             Visit Us
@@ -96,6 +95,27 @@ const page = () => {
               className="rounded-2xl border-0"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+          <h1 className="my-5 text-2xl md:text-3xl">Working Hours</h1>
+          <div className="mx-auto grid w-[85vw] grid-cols-2">
+            <div className="text-left">
+              <p>Monday</p>
+              <p>Tuesday</p>
+              <p>Wednesday</p>
+              <p>Thursday</p>
+              <p>Friday</p>
+              <p>Saturday</p>
+              <p>Sunday</p>
+            </div>
+            <div className="text-left opacity-75">
+              <p>11 am to 5 pm</p>
+              <p>11 am to 5 pm</p>
+              <p>11 am to 5 pm</p>
+              <p>11 am to 5 pm</p>
+              <p>11 am to 5 pm</p>
+              <p>11 am to 1 pm</p>
+              <p>11 am to 1 pm</p>
+            </div>
           </div>
           <div className="my-4 border-2 border-b-black-100 md:my-8" />
         </section>

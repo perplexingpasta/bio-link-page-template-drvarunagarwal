@@ -1,27 +1,28 @@
-// "use client";
+"use client"
 import React from "react";
-// import NavbarPS from "@/components/NavbarPS";
-// import dynamic from "next/dynamic";
-
-// const DynamicWhatsapp = dynamic(() => import("@/components/Whatsapp"));
-// const DynamicFooter = dynamic(() => import("@/components/Footer"));
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      {/* <div>
-        <div>
-          <nav className="w-full">
-            <NavbarPS />
-          </nav>
-          {children}
-          <DynamicWhatsapp />
-          <footer className="bg-[#1f1f1f] px-5 sm:px-10">
-            <DynamicFooter />
-          </footer>
-        </div>
-      </div> */}
-      {children}
+      {/* Background grid with animation */}
+      <div className="bg-grid-black/[0.05] animate-bgMove pointer-events-none fixed left-0 top-0 h-full w-full">
+        {/* <div className="absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" /> */}
+      </div>
+      <div className="relative">{children}</div>
+
+      <style jsx global>{`
+        @keyframes bgMove {
+          0% {
+            background-position: 0 0;
+          }
+          100% {
+            background-position: 100% 50%;
+          }
+        }
+        .animate-bgMove {
+          animation: bgMove 8s linear infinite;
+        }
+      `}</style>
     </>
   );
 };
