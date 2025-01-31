@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiContactsLine } from "react-icons/ri";
@@ -45,39 +44,40 @@ const page = () => {
             className="mx-auto my-2 w-max place-self-center rounded-2xl"
           />
           <div className="mx-auto">
-            <Link
+            <a
               className="my-4 flex items-center justify-center md:mt-5"
-              href="tel:01274222811"
+              href="tel:+916362840780"
             >
-              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
+              <button className="w-[90vw] rounded-xl bg-violet-300 p-3 text-base transition-all duration-300 hover:bg-violet-500 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
                 <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
                   <BiPhoneCall className="text-2xl md:text-4xl" />
                   Call Now
                 </span>
               </button>
-            </Link>
-            <Link
+            </a>
+            <a
               className="my-4 flex items-center justify-center md:mt-5"
-              href="tel:01274222811"
+              href="https://api.whatsapp.com/send?phone=919557088564"
             >
-              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
+              <button className="w-[90vw] rounded-xl bg-violet-300 p-3 text-base transition-all duration-300 hover:bg-violet-500 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
                 <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
                   <FaWhatsapp className="text-2xl md:text-4xl" />
                   Text on WhatsApp
                 </span>
               </button>
-            </Link>
-            <Link
+            </a>
+            <a
               className="my-4 flex items-center justify-center md:mt-5"
-              href="tel:01274222811"
+              href="/Rishabh Céleste Consulting.vcf"
+              download={"Rishabh Céleste Consulting"}
             >
-              <button className="w-[90vw] rounded-xl bg-red-300 p-3 text-base transition-all duration-300 hover:bg-red-400 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
+              <button className="w-[90vw] rounded-xl bg-violet-300 p-3 text-base transition-all duration-300 hover:bg-violet-500 hover:text-white active:bg-black-100 active:text-white md:w-[80vw] md:p-3 md:px-6 lg:w-[25vw]">
                 <span className="ml-4 flex items-center justify-start gap-x-4 md:ml-12 md:gap-x-6">
                   <RiContactsLine className="text-2xl md:text-4xl" />
                   Save Contact Info
                 </span>
               </button>
-            </Link>
+            </a>
           </div>
           <div className="my-4 border-2 border-b-black-100 md:my-8" />
         </section>
@@ -97,8 +97,8 @@ const page = () => {
             ></iframe>
           </div>
           <h1 className="my-5 text-2xl md:text-3xl">Working Hours</h1>
-          <div className="mx-auto grid w-[85vw] grid-cols-2">
-            <div className="text-left">
+          <div className="mx-auto grid w-[85vw] grid-cols-2 justify-center md:w-[70vw] md:text-xl lg:w-[25vw]">
+            <div className="text-left md:leading-relaxed">
               <p>Monday</p>
               <p>Tuesday</p>
               <p>Wednesday</p>
@@ -107,7 +107,7 @@ const page = () => {
               <p>Saturday</p>
               <p>Sunday</p>
             </div>
-            <div className="text-left opacity-75">
+            <div className="text-right opacity-75 md:leading-relaxed">
               <p>11 am to 5 pm</p>
               <p>11 am to 5 pm</p>
               <p>11 am to 5 pm</p>
@@ -121,40 +121,37 @@ const page = () => {
         </section>
 
         {/* SOCIAL ICONS */}
-        <section className="mb-16 flex flex-row items-center justify-center space-x-4 text-3xl md:mb-24 md:space-x-6 md:text-4xl">
-          <Link href="tel:01274222811">
+        <section className="mb-20 flex flex-row items-center justify-center space-x-4 text-3xl md:mb-24 md:space-x-6 md:text-4xl">
+          <a href="mailto:hello@celesteconsulting.in" target="_blank">
             <IoMdMail />
-          </Link>
-          <Link href="tel:01274222811">
+          </a>
+          <a href="https://www.celesteconsulting.in/" target="_blank">
             <HiMiniGlobeAsiaAustralia />
-          </Link>
-          <Link href="tel:01274222811">
+          </a>
+          <a
+            href="https://www.facebook.com/people/Celeste-Consulting/61561819893146/"
+            target="_blank"
+          >
             <MdFacebook />
-          </Link>
-          <Link href="tel:01274222811">
+          </a>
+          <a href="https://www.instagram.com/consultceleste/" target="_blank">
             <AiFillInstagram />
-          </Link>
-          {/* <Link href="tel:01274222811">
-            <IoLogoWhatsapp />
-          </Link>
-          <Link href="tel:01274222811">
-            <IoMdContact />
-          </Link> */}
+          </a>
         </section>
       </main>
 
       <footer>
-        <div className="bg-black p-3 text-center font-light text-white md:p-6 md:text-lg lg:text-xl">
+        <div className="bg-black p-3 text-center text-sm font-light text-white md:p-6 md:text-lg lg:text-xl">
           {" "}
           Designed by{" "}
-          <Link
+          <a
             href="https://www.celesteconsulting.in/"
             className="!cursor-pointer hover:text-indigo-300"
             target="_blank"
           >
             {" "}
             Céleste Consulting ✨
-          </Link>
+          </a>
         </div>
       </footer>
     </>

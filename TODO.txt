@@ -2,6 +2,6 @@ md & lg view ✅
 moving background ✅
 clean up the code ✅
 
-link hrefs
-make vcard info file
-color bg variants for gender
+link hrefs ✅
+make vcard info file ✅
+color bg variants for gender ✅

@@ -327,18 +327,6 @@
   padding: 10px 25px;
   text-transform: uppercase;
 }
-/* .content .btns a:hover {
-  background: var(--btn-color);
-  color: coral
-} */
-
-/* FONTS CSS */
-/* @font-face {
-  font-family: "Lexend";
-  src: url("/fonts/Lexend-Variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-} */
 
 @font-face {
   font-family: "LexendDeca";
@@ -352,89 +340,4 @@
   src: url("/fonts/Inter-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
-}
-
-/* @font-face {
-  font-family: "OpenSans";
-  src: url("/fonts/OpenSans-Variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-} */
-/* 
-@font-face {
-  font-family: "PoppinsRegular";
-  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsBlack";
-  src: url("/fonts/Poppins-Black.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsBold";
-  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsExtraBold";
-  src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsLight";
-  src: url("/fonts/Poppins-Light.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsMedium";
-  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsSemiBold";
-  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PoppinsThin";
-  src: url("/fonts/Poppins-Thin.ttf") format("truetype");
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "PloniRegular";
-  src: url("/fonts/PloniRegular.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PloniLight";
-  src: url("/fonts/PloniLight.otf") format("opentype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PloniMedium";
-  src: url("/fonts/PloniMedium.otf") format("opentype");
-  font-style: normal;
-} */
-
-/* EMBLA CLASSES */
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
 }
